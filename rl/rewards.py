@@ -79,8 +79,8 @@ class Rewards:
         self.style_encoder = SentenceTransformer('StyleDistance/styledistance').to(torch.device('cuda'))
         self.style_examples = [
             "Good evening Sir or Madam, I would like to introduce myself.",
-            "Lori's gonna rock being boss at HiTOPS; she'll seriously push things forward.", # informal# "Hey dude, what's up? Such a funny story I have in my mind to share",
-            "Wow :-), I'll advocate for Blanco's dedication to ethical business, and CRT membership =D!" # Text emojies #"Telling the truth - I really hate it, if you do it one more time you will experience consequences!"
+            "Lori's gonna rock being boss at HiTOPS; she'll seriously push things forward.", # informal
+            "Wow :-), I'll advocate for Blanco's dedication to ethical business, and CRT membership =D!" # Text emojies 
         ]
         with torch.no_grad():
             self.style_examples_encoded = self.style_encoder.encode(self.style_examples)
