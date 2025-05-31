@@ -196,7 +196,9 @@ class Rewards:
                 "detector_reward": torch.mean(reward.to(torch.float32).to(torch.device("cpu"))).item(), 
                 "style_reward": torch.mean(style.to(torch.float32).to(torch.device("cpu"))).item(), 
                 "balancer": torch.mean(balancer.to(torch.float32).to(torch.device("cpu"))).item(), 
-                "lenth_component": torch.mean(lenth_components.to(torch.float32).to(torch.device("cpu"))).item()}
+                "lenth_component": torch.mean(lenth_components.to(torch.float32).to(torch.device("cpu"))).item(),
+                "cosines": cos.squeeze().tolist()
+            }
         # balancer should be implement somehow else
         return mask*(reward+style+lenth_components+ner_rewards) #style #ner_rewards*mask*(reward+style+lenth_components)
     
