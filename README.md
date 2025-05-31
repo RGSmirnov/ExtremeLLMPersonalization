@@ -4,9 +4,7 @@ This repository contains code to implement the main parts of the attached paper 
 
 Abstract from the paper: 
 
-```txt
-In this paper, we address the problem of multiple correct behaviors, which is critical for achieving extreme individual user personalization. We propose a novel solution based on the reward dropout method. Using the task of style transfer designed to bypass AI detection — where multiple valid output styles are allowed — we demonstrate that reward dropout not only effectively handles the multiple correct behavior challenge but also serves as a regularization technique for the reinforcement learning (RL) training process, analogous to the original dropout used in neural networks. Our approach emphasizes personalization through the use of LoRA adapters, enabling a more flexible and resource-efficient personalization framework. Furthermore, we investigate the Bit-LoRA method and show that, despite its limited exploration capacity, it can still enhance the efficiency of the personalization system.
-```
+`In this paper, we address the problem of multiple correct behaviors, which is critical for achieving extreme individual user personalization. We propose a novel solution based on the reward dropout method. Using the task of style transfer designed to bypass AI detection — where multiple valid output styles are allowed — we demonstrate that reward dropout not only effectively handles the multiple correct behavior challenge but also serves as a regularization technique for the reinforcement learning (RL) training process, analogous to the original dropout used in neural networks. Our approach emphasizes personalization through the use of LoRA adapters, enabling a more flexible and resource-efficient personalization framework. Furthermore, we investigate the Bit-LoRA method and show that, despite its limited exploration capacity, it can still enhance the efficiency of the personalization system.`
 
 ---
 
