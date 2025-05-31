@@ -11,7 +11,7 @@ Abstract from the paper:
 Open source plan:
 - [x] release main code and data
 - [ ] opensource model weights
-- [ ] improve the components
+- [ ] improve the components, experiment with Bit-LoRA more and try 1.58bit-LoRA (not tried yet)
 
 ---
 
